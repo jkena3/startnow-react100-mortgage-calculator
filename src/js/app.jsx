@@ -20,7 +20,7 @@ export default class App extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  calculate(e) {
+  calculate(e) {//use mortgage rate formula, set ouput
     e.preventDefault();
     let p = this.state.balance;
     let r = ((this.state.rate / 100) / 12);
