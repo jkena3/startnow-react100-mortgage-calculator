@@ -11,7 +11,7 @@ export default class App extends React.Component {
       term: '',
       output: ''
     };
-
+    //event bind for onChange/onClick 
     this.handleChange = this.handleChange.bind(this);
     this.calculate = this.calculate.bind(this)
   };
@@ -33,7 +33,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    return (
+    return (//horizontal form 
       <div className='container'>
         <form class='form-horizontal' onChange={this.handleChange}>
           <div class='form-group' name='title'>
